@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treasure Hunt Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <div id="game-container">
+        <h1>Treasure Hunt Game</h1>
+        <p id="clue">Click Start to begin!</p>
+        <button id="start-button">Start</button>
+        <input type="text" id="answer-input" placeholder="Enter your answer..." style="display: none;" autocomplete="off">
+        <button id="submit-button" style="display: none;">Submit</button>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
