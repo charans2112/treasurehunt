@@ -1,18 +1,12 @@
 const clues = [
-    { question: "Where did we first meet?", key: "q1" },
-    { question: "What’s my favorite snack?", key: "q2" },
-    { question: "Which game do we always argue about?", key: "q3" },
-    { question: "Our favorite hangout spot?", key: "q4" },
-    { question: "What’s my favorite color?", key: "q5" },
-    { question: "Which subject do I hate the most?", key: "q6" },
-    { question: "Who always loses in our dares?", key: "q7" },
-    { question: "What’s the name of our secret code language?", key: "q8" },
-    { question: "Which movie do we watch again and again?", key: "q9" },
-    { question: "Final clue! What's our friendship nickname?", key: "q10" }
+    { question: "When did you we meet in my college?", key: "q1" },
+    { question: "What was the first thing that I bought you in the college?", key: "q2" },
+    { question: "whats my nick name that u and su used to make fun of me in school?", key: "q3" },
+    { question: "why did you hate me so much when I came to school?", key: "q4" }
 ];
 
 let currentClue = 0;
-let randomFailureChance = 0.3; // 30% chance to show "Wrong Answer"
+let randomFailureChance = 0.5; // 30% chance to show "Wrong Answer"
 
 // Initialize Supabase (Replace with your actual Supabase URL and Key)
 const SUPABASE_URL = "https://vqpuvujyujjpaotlsyon.supabase.co";
