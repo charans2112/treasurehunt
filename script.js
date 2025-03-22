@@ -7,7 +7,7 @@ const clues = [
 ];
 
 let currentClue = 0;
-let randomFailureChance = 0.3; // 30% chance to show "Wrong Answer"
+let randomFailureChance = 0.8; // 30% chance to show "Wrong Answer"
 
 // Track forced wrong answer for q4 and q5
 let forcedWrong = { q4: true, q5: true };
