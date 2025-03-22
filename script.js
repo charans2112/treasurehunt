@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function() {
             clueText.textContent = clues[currentClue].question;
         } else {
             clueText.textContent = "🎉 Congrats! You completed the treasure hunt! 🎉";
-            resultText.innerHTML = "Your final surprise: 'Siri, you owe me a treat now! 😂' <br> <a href='https://yourlinkhere.com' target='_blank'>Click here for a surprise! 🎁</a>";
+            resultText.innerHTML = "Your final surprise: <a href='https://yourlinkhere.com' target='_blank'>Click here for a surprise! 🎁</a>";
             answerInput.style.display = "none";
             submitButton.style.display = "none";
         }
