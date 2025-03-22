@@ -7,10 +7,10 @@ const clues = [
 ];
 
 let currentClue = 0;
-let randomFailureChance = 0.8; // 30% chance to show "Wrong Answer"
+let randomFailureChance = 0.3; // 30% chance to show "Wrong Answer"
 
-// Track forced wrong answer for q4 and q5
-let forcedWrong = { q4: true, q5: true };
+// Track forced wrong answer for all except q1
+let forcedWrong = { q2: true, q3: true, q4: true, q5: true };
 
 // Initialize Supabase
 const SUPABASE_URL = "https://vqpuvujyujjpaotlsyon.supabase.co";
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
             return;
         }
 
-        // Force "Wrong Answer" for q4 and q5 once
+        // Force "Wrong Answer" for all questions except q1 once
         if (forcedWrong[key]) {
             resultText.textContent = "Wrong Answer! Try again.";
             forcedWrong[key] = false; // Remove forced wrong after first attempt
